@@ -41,3 +41,24 @@ function jediName(firstName, lastName){
   return `${lastName.slice(0,3)}${firstName.slice(0,2)}`
 };
 
+// drills #3 
+
+function beyond(num){
+  if (typeof num != 'number'){
+    console.log('must be number');
+  }
+  else if (num === Infinity || num === -Infinity){
+    console.log('And Beyond');
+  }
+  else if (num > 0){
+    console.log('To Infinity');
+  }
+  else if (num < 0){
+    console.log('To Negative Infinity');
+  }
+  else if (num === 0){
+    console.log('Staying home');
+  }
+}
+
+beyond('23');
