@@ -122,3 +122,35 @@ function howManyDaysInAMonth(month, leapyear) {
 }
 
 console.log(howManyDaysInAMonth('February'));
+
+function rpsGame(hand){
+  const computerHand = Math.floor(Math.random() * 3) + 1;
+  console.log(computerHand);
+  if (hand !== 1 && hand !== 2 && hand !== 3){
+    return 'please enter 1, 2, or 3';
+  }
+  else if (hand === computerHand){
+    return "it's a tie!";
+  }
+  else if (hand === 1 && computerHand === 2){
+    return "you win!";
+  }
+  else if (hand === 1 && computerHand === 3){
+    return "you lose";
+  }
+  else if (hand === 2 && computerHand === 1){
+    return "you lose";
+  }
+  else if (hand ===2 && computerHand === 3){
+    return "you win";
+  }
+  else if (hand ===3 && computerHand === 1){
+    return "you lose";
+  }
+  else if (hand ===3 && computerHand === 2){
+    return "you win";
+  }
+
+}
+
+console.log(rpsGame(2));
