@@ -35,3 +35,9 @@ function checkIfParameterIsRightType(name, age) {
 //  getYearofBirth();
  createGreeting("Peter", 49);
  
+//  starting drills #2
+
+function jediName(firstName, lastName){
+  return `${lastName.slice(0,3)}${firstName.slice(0,2)}`
+};
+
