@@ -1,8 +1,5 @@
 let myTeam = "Peter David Jason";
 console.log(myTeam);
-function createGreeting() {
-    return 'my name is Dave and I am 33';
+function createGreeting(name, age) {
+    return `my name is ${name} and I am ${age}`;
 }
-
-const greeting1 = createGreeting();
-console.log(greeting1);
