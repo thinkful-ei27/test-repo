@@ -87,3 +87,38 @@ function decode(sentence) {
 }
 
 console.log(decode('craft block argon meter bells brown croon droop'));
+
+function howManyDaysInAMonth(month, leapyear) {
+  // wanted to figure out how to deal with lowercase months
+  // but ran out of time
+  
+  switch(month) {
+    case 'January': 
+    case 'March' :
+    case 'May':
+    case 'July':
+    case 'August':
+    case 'October':
+    case 'December': {
+      return `${month} has 31 days`;
+    }
+
+    case 'April':
+    case 'June': 
+    case 'September': 
+    case 'November': {
+      return `${month} has 30 days`;
+    }
+
+    case 'February': {
+      return leapyear ? `${month} has 29 days` : `${month} has 28 days`;
+    }
+
+    default: 
+     throw new Error('Please enter a valid month') 
+  } 
+
+
+}
+
+console.log(howManyDaysInAMonth('February'));
